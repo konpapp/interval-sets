@@ -128,7 +128,7 @@ const getIntervalDifference = (includePairs, excludePairs) => {
       }
     }
   }
-  console.log(outputArray);
+  console.log(outputArray.toString());
 };
 
 // Interval pair format (x-y) with x > y
