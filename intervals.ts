@@ -78,13 +78,6 @@ const getIntervalInput = async () =>
   );
 
 const getIntervalDifference = (includePairs, excludePairs) => {
-  const startingDigitsForExclusion = excludePairs.map((el) => {
-    return Number(el.split("-")[0]);
-  });
-  const excludeLengths = excludePairs.map((el) => {
-    const excludePair = el.split("-");
-    return excludePair[1] - excludePair[0];
-  });
   // minMaxPair format: [minIntervalNumber, maxIntervalNumber]
   const minMaxPair = getMinMaxIntervals(includePairs);
   let outputPair = "";
